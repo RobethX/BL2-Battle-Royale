@@ -74,7 +74,7 @@
 
         set WillowGameInfo bBossesRegenHealthOnReset false
 		
-		set WillowGame.WillowAIPawn SightRadius 1000
+	set WillowGame.WillowAIPawn SightRadius 1000
 
     #</Balance Tweaks>
 
@@ -166,13 +166,13 @@
 
         set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_13 location (x=-29741, y=2108, z=-7633)
 		
-		set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_14 location (x=340156, y=-10849, z=-959)
+	set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_14 location (x=340156, y=-10849, z=-959)
 		
-		set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_15 location (x=24387, y=-9508, z=-2366)
+	set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_15 location (x=24387, y=-9508, z=-2366)
 		
-		set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_16 location (x=3484, y=-25279, z=266)
+	set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_16 location (x=3484, y=-25279, z=266)
 		
-		set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_17 location (x=-10772, y=-34092, z=-627)
+	set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_17 location (x=-10772, y=-34092, z=-627)
 
     #</Teleport Players>
 
