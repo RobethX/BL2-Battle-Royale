@@ -1,0 +1,140 @@
+#<Robeth's Battle Royale v2>
+
+    #<Core>
+
+        exec cooppatch.txt
+
+        set Engine.OnlineGameSettings OwningPlayerName Robeth's Battle Royale
+
+        set WillowGame.WillowGameInfo bIgnoreFriendlyFire false
+
+        set WillowPlayerPawn FriendlyFireDamageMultiplier 1
+
+        set WillowPlayerPawn FriendlyFireDamageMultiplierBaseValue 1
+
+        set GD_AI_Allegiance.Allegiance_Player SelfOpinion OPINION_Enemy
+
+    #</Core>
+
+    #<Player>
+
+        set WillowPlayerController SaveGameName Robeth_BR_Save.sav
+
+        set WillowPlayerController SaveGameFileID 6969
+
+        set WillowPlayerController ExpLevelLoadedFromSavedGame 50
+
+        set WillowPlayerReplicationInfo ExpLevel 50
+
+        set WillowPlayerController CharacterClass PlayerClassDefinition'GD_Soldier.Character.CharClass_Soldier'
+
+        set WillowPlayerController PlayerClass PlayerClassDefinition'GD_Soldier.Character.CharClass_Soldier'
+
+        set WillowPlayerReplicationInfo CharacterNameIdDef PlayerNameIdentifierDefinition'GD_PlayerNameId.Soldier'
+
+        set PlayerSkillTree Branches None
+
+        set PlayerSkillTree Tiers None
+
+        set PlayerSkillTree Skills None
+
+        set PlayerSkillTree Branches ((Definition=SkillTreeBranchDefinition'GD_Soldier_Skills.SkillTree.Branch_ActionSkill_Turret',BranchPointsToUnlockNextBranch=1,Index=0,ParentBranchIndex=-1,PrevBranchIndex=-1,NextBranchIndex=-1,ChildBranchIndices=(1,2,3),TierIndices=(0),Owner=PlayerSkillTree),(Definition=SkillTreeBranchDefinition'GD_Soldier_Skills.SkillTree.Branch_Guerrilla',BranchPointsToUnlockNextBranch=26,Index=1,ParentBranchIndex=0,PrevBranchIndex=-1,NextBranchIndex=2,ChildBranchIndices=,TierIndices=(1,2,3,4,5,6),Owner=PlayerSkillTree),(Definition=SkillTreeBranchDefinition'GD_Soldier_Skills.SkillTree.Branch_Gunpowder',BranchPointsToUnlockNextBranch=26,Index=2,ParentBranchIndex=0,PrevBranchIndex=1,NextBranchIndex=3,ChildBranchIndices=,TierIndices=(7,8,9,10,11,12),Owner=PlayerSkillTree),(Definition=SkillTreeBranchDefinition'GD_Soldier_Skills.SkillTree.Branch_Survival',BranchPointsToUnlockNextBranch=26,Index=3,ParentBranchIndex=0,PrevBranchIndex=2,NextBranchIndex=-1,ChildBranchIndices=,TierIndices=(13,14,15,16,17,18),Owner=PlayerSkillTree))
+
+        set PlayerSkillTree Tiers ((SkillIndices=(0),BranchPointsToUnlockTier=0,Index=0,PrevTierIndex=-1,NextTierIndex=-1,ParentBranchIndex=0,TierNumber=0,bUnlocked=True,Owner=PlayerSkillTree),(SkillIndices=(1,2),BranchPointsToUnlockTier=0,Index=1,PrevTierIndex=-1,NextTierIndex=2,ParentBranchIndex=1,TierNumber=0,bUnlocked=True,Owner=PlayerSkillTree),(SkillIndices=(3,4),BranchPointsToUnlockTier=5,Index=2,PrevTierIndex=1,NextTierIndex=3,ParentBranchIndex=1,TierNumber=1,bUnlocked=True,Owner=PlayerSkillTree),(SkillIndices=(5,6,7),BranchPointsToUnlockTier=10,Index=3,PrevTierIndex=2,NextTierIndex=4,ParentBranchIndex=1,TierNumber=2,bUnlocked=True,Owner=PlayerSkillTree),(SkillIndices=(8),BranchPointsToUnlockTier=15,Index=4,PrevTierIndex=3,NextTierIndex=5,ParentBranchIndex=1,TierNumber=3,bUnlocked=True,Owner=PlayerSkillTree),(SkillIndices=(9),BranchPointsToUnlockTier=20,Index=5,PrevTierIndex=4,NextTierIndex=6,ParentBranchIndex=1,TierNumber=4,bUnlocked=False,Owner=PlayerSkillTree),(SkillIndices=(10),BranchPointsToUnlockTier=25,Index=6,PrevTierIndex=5,NextTierIndex=-1,ParentBranchIndex=1,TierNumber=5,bUnlocked=False,Owner=PlayerSkillTree),(SkillIndices=(11,12),BranchPointsToUnlockTier=0,Index=7,PrevTierIndex=-1,NextTierIndex=8,ParentBranchIndex=2,TierNumber=0,bUnlocked=True,Owner=PlayerSkillTree),(SkillIndices=(13,14),BranchPointsToUnlockTier=5,Index=8,PrevTierIndex=7,NextTierIndex=9,ParentBranchIndex=2,TierNumber=1,bUnlocked=False,Owner=PlayerSkillTree),(SkillIndices=(15,16,17),BranchPointsToUnlockTier=10,Index=9,PrevTierIndex=8,NextTierIndex=10,ParentBranchIndex=2,TierNumber=2,bUnlocked=False,Owner=PlayerSkillTree),(SkillIndices=(18,19),BranchPointsToUnlockTier=15,Index=10,PrevTierIndex=9,NextTierIndex=11,ParentBranchIndex=2,TierNumber=3,bUnlocked=False,Owner=PlayerSkillTree),(SkillIndices=(20),BranchPointsToUnlockTier=20,Index=11,PrevTierIndex=10,NextTierIndex=12,ParentBranchIndex=2,TierNumber=4,bUnlocked=False,Owner=PlayerSkillTree),(SkillIndices=(21),BranchPointsToUnlockTier=25,Index=12,PrevTierIndex=11,NextTierIndex=-1,ParentBranchIndex=2,TierNumber=5,bUnlocked=False,Owner=PlayerSkillTree),(SkillIndices=(22,23),BranchPointsToUnlockTier=0,Index=13,PrevTierIndex=-1,NextTierIndex=14,ParentBranchIndex=3,TierNumber=0,bUnlocked=True,Owner=PlayerSkillTree),(SkillIndices=(24,25),BranchPointsToUnlockTier=5,Index=14,PrevTierIndex=13,NextTierIndex=15,ParentBranchIndex=3,TierNumber=1,bUnlocked=True,Owner=PlayerSkillTree),(SkillIndices=(26,27,28),BranchPointsToUnlockTier=10,Index=15,PrevTierIndex=14,NextTierIndex=16,ParentBranchIndex=3,TierNumber=2,bUnlocked=True,Owner=PlayerSkillTree),(SkillIndices=(29,30),BranchPointsToUnlockTier=15,Index=16,PrevTierIndex=15,NextTierIndex=17,ParentBranchIndex=3,TierNumber=3,bUnlocked=True,Owner=PlayerSkillTree),(SkillIndices=(31),BranchPointsToUnlockTier=20,Index=17,PrevTierIndex=16,NextTierIndex=18,ParentBranchIndex=3,TierNumber=4,bUnlocked=True,Owner=PlayerSkillTree),(SkillIndices=(32),BranchPointsToUnlockTier=25,Index=18,PrevTierIndex=17,NextTierIndex=-1,ParentBranchIndex=3,TierNumber=5,bUnlocked=True,Owner=PlayerSkillTree))
+
+        set PlayerSkillTree Skills ((Definition=SkillDefinition'GD_Soldier_Skills.Guerrilla.Sentry',Index=1,PrevSkillIndex=-1,NextSkillIndex=2,ParentTierIndex=1,PrevSkillTypeIndex=-1,NextSkillTypeIndex=2,Grade=5,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Guerrilla.Ready',Index=2,PrevSkillIndex=1,NextSkillIndex=-1,ParentTierIndex=1,PrevSkillTypeIndex=1,NextSkillTypeIndex=3,Grade=0,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Guerrilla.LaserSight',Index=3,PrevSkillIndex=-1,NextSkillIndex=4,ParentTierIndex=2,PrevSkillTypeIndex=2,NextSkillTypeIndex=4,Grade=5,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Guerrilla.Willing',Index=4,PrevSkillIndex=3,NextSkillIndex=-1,ParentTierIndex=2,PrevSkillTypeIndex=3,NextSkillTypeIndex=6,Grade=5,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Guerrilla.Onslaught',Index=5,PrevSkillIndex=-1,NextSkillIndex=6,ParentTierIndex=3,PrevSkillTypeIndex=-1,NextSkillTypeIndex=14,Grade=0,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Guerrilla.ScorchedEarth',Index=6,PrevSkillIndex=5,NextSkillIndex=7,ParentTierIndex=3,PrevSkillTypeIndex=4,NextSkillTypeIndex=7,Grade=1,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Guerrilla.Able',Index=7,PrevSkillIndex=6,NextSkillIndex=-1,ParentTierIndex=3,PrevSkillTypeIndex=6,NextSkillTypeIndex=8,Grade=0,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Guerrilla.Grenadier',Index=8,PrevSkillIndex=-1,NextSkillIndex=-1,ParentTierIndex=4,PrevSkillTypeIndex=7,NextSkillTypeIndex=9,Grade=0,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Guerrilla.CrisisManagement',Index=9,PrevSkillIndex=-1,NextSkillIndex=-1,ParentTierIndex=5,PrevSkillTypeIndex=8,NextSkillTypeIndex=10,Grade=0,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Guerrilla.DoubleUp',Index=10,PrevSkillIndex=-1,NextSkillIndex=-1,ParentTierIndex=6,PrevSkillTypeIndex=9,NextSkillTypeIndex=11,Grade=0,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Gunpowder.Impact',Index=11,PrevSkillIndex=-1,NextSkillIndex=12,ParentTierIndex=7,PrevSkillTypeIndex=10,NextSkillTypeIndex=12,Grade=5,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Gunpowder.Expertise',Index=12,PrevSkillIndex=11,NextSkillIndex=-1,ParentTierIndex=7,PrevSkillTypeIndex=11,NextSkillTypeIndex=13,Grade=0,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Gunpowder.Overload',Index=13,PrevSkillIndex=-1,NextSkillIndex=14,ParentTierIndex=8,PrevSkillTypeIndex=12,NextSkillTypeIndex=15,Grade=0,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Gunpowder.MetalStorm',Index=14,PrevSkillIndex=13,NextSkillIndex=-1,ParentTierIndex=8,PrevSkillTypeIndex=5,NextSkillTypeIndex=28,Grade=0,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Gunpowder.Steady',Index=15,PrevSkillIndex=-1,NextSkillIndex=16,ParentTierIndex=9,PrevSkillTypeIndex=13,NextSkillTypeIndex=16,Grade=0,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Gunpowder.LongBowTurret',Index=16,PrevSkillIndex=15,NextSkillIndex=17,ParentTierIndex=9,PrevSkillTypeIndex=15,NextSkillTypeIndex=17,Grade=0,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Gunpowder.Battlefront',Index=17,PrevSkillIndex=16,NextSkillIndex=-1,ParentTierIndex=9,PrevSkillTypeIndex=16,NextSkillTypeIndex=18,Grade=0,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Gunpowder.DutyCalls',Index=18,PrevSkillIndex=-1,NextSkillIndex=19,ParentTierIndex=10,PrevSkillTypeIndex=17,NextSkillTypeIndex=19,Grade=0,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Gunpowder.DoOrDie',Index=19,PrevSkillIndex=18,NextSkillIndex=-1,ParentTierIndex=10,PrevSkillTypeIndex=18,NextSkillTypeIndex=20,Grade=0,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Gunpowder.Ranger',Index=20,PrevSkillIndex=-1,NextSkillIndex=-1,ParentTierIndex=11,PrevSkillTypeIndex=19,NextSkillTypeIndex=21,Grade=0,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Gunpowder.Nuke',Index=21,PrevSkillIndex=-1,NextSkillIndex=-1,ParentTierIndex=12,PrevSkillTypeIndex=20,NextSkillTypeIndex=22,Grade=0,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Survival.HealthY',Index=22,PrevSkillIndex=-1,NextSkillIndex=23,ParentTierIndex=13,PrevSkillTypeIndex=21,NextSkillTypeIndex=23,Grade=5,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Survival.Preparation',Index=23,PrevSkillIndex=22,NextSkillIndex=-1,ParentTierIndex=13,PrevSkillTypeIndex=22,NextSkillTypeIndex=24,Grade=5,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Survival.LastDitchEffort',Index=24,PrevSkillIndex=-1,NextSkillIndex=25,ParentTierIndex=14,PrevSkillTypeIndex=23,NextSkillTypeIndex=25,Grade=0,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Survival.Pressure',Index=25,PrevSkillIndex=24,NextSkillIndex=-1,ParentTierIndex=14,PrevSkillTypeIndex=24,NextSkillTypeIndex=26,Grade=0,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Survival.Forbearance',Index=26,PrevSkillIndex=-1,NextSkillIndex=27,ParentTierIndex=15,PrevSkillTypeIndex=25,NextSkillTypeIndex=27,Grade=5,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Survival.PhalanxShield',Index=27,PrevSkillIndex=26,NextSkillIndex=28,ParentTierIndex=15,PrevSkillTypeIndex=26,NextSkillTypeIndex=29,Grade=0,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Survival.QuickCharge',Index=28,PrevSkillIndex=27,NextSkillIndex=-1,ParentTierIndex=15,PrevSkillTypeIndex=14,NextSkillTypeIndex=-1,Grade=5,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Survival.Resourceful',Index=29,PrevSkillIndex=-1,NextSkillIndex=30,ParentTierIndex=16,PrevSkillTypeIndex=27,NextSkillTypeIndex=30,Grade=5,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Survival.Mag-Lock',Index=30,PrevSkillIndex=29,NextSkillIndex=-1,ParentTierIndex=16,PrevSkillTypeIndex=29,NextSkillTypeIndex=31,Grade=1,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Survival.Grit',Index=31,PrevSkillIndex=-1,NextSkillIndex=-1,ParentTierIndex=17,PrevSkillTypeIndex=30,NextSkillTypeIndex=32,Grade=0,Owner=PlayerSkillTree),(Definition=SkillDefinition'GD_Soldier_Skills.Survival.Gemini',Index=32,PrevSkillIndex=-1,NextSkillIndex=-1,ParentTierIndex=18,PrevSkillTypeIndex=31,NextSkillTypeIndex=-1,Grade=1,Owner=PlayerSkillTree))
+
+        set WillowPlayerReplicationInfo GeneralSkillPoints 0
+
+        set WillowPlayerReplicationInfo SpecialistSkillPoints 0
+
+        set WillowPlayerPawn HealthMaxVar 100000
+
+        set WillowPlayerPawn HealthVar 100000
+
+        set HealthResourcePool MaxValue 100000
+
+        set HealthResourcePool MaxValueBaseValue 100000
+
+        set HealthResourcePool CurrentValue 100000
+
+    #</Player>
+
+    #<Balance Tweaks>
+
+        set WillowGameInfo bBossesRegenHealthOnReset false
+
+        set GD_Playthrough3Tuning.Balance.BalanceMod_PT3 BalanceModifiers ((MinEffectiveLevel=1,EnemyHealthMultiplier=1.000000,BadassEnemyHealthMultiplier=1.000000,EnemyShieldStrengthMultiplier=1.000000,BadassEnemyShieldStrengthMultiplier=1.000000,EnemyDamageMultiplier=1.000000,BadassEnemyDamageMultiplier=1.100000,XPGainedFromCombatMultiplier=1.000000,XPGainedFromQuestsMultiplier=1.000000,BadassRankGainMultiplier=0.000000,AmplifiedDamageMultiplier=1.000000,PlayerVehicleWeaponDamageMultiplier=3.000000,AttributeEffectsForSpawnedEnemies=((AttributeToModify=ResourcePoolAttributeDefinition'D_Attributes.AccuracyResourcePool.AccuracyMaxValue',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=-1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000)),(AttributeToModify=ResourcePoolAttributeDefinition'D_Attributes.AccuracyResourcePool.AccuracyMinValue',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=-1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.ShieldResourcePool.ShieldOnIdleRegenerationRate',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=-1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.DamageSourceModifiers.InstigatedStatusEffectDamageModifier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=-0.050000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.Weapon.WeaponDamage',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000)),(AttributeToModify=ResourcePoolAttributeDefinition'D_Attributes.HealthResourcePool.HealthPassiveRegenerationRate',ModifierType=MT_PostAdd,BaseModifierValue=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=AttributeInitializationDefinition'GD_Playthrough3Tuning.Formulas.Init_EnemyHealthRegenFormula',BaseValueScaleConstant=1.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.StatusEffectModifiers.AmpDurationResistanceModifier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000))),AttributeEffectsForPlayers=((AttributeToModify=AttributeDefinition'D_Attributes.Weapon.WeaponSwapTimeMultiplier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=0.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.DamageTypeModifers.InstigatedIncendiaryStatusDamageModifier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=0.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.DamageTypeModifers.InstigatedCorrosiveStatusDamageModifier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=0.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.DamageTypeModifers.InstigatedShockStatusDamageModifier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=0.000000))),AmmoDropsPerPlayerMultiplier=(BaseValueConstant=3.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000),GearDrops_CommonWeightModifier_PT3_BaseValueOverride=(BaseValueConstant=0.075000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000),ChestItemPool_Weight_2_Uncommon_PT3_Multiplier=(BaseValueConstant=0.075000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000),StatusEffectChanceScales=,AIDamageScaleByLevelDifference=))
+
+    #</Balance Tweaks>
+
+    #<Make Everything Hostile (Magic_Gonads' SuperAggressive.txt)>
+
+        set GD_AI_Allegiance.Allegiance_Player ForcedOtherOpinion OPINION_Enemy
+
+        set GD_AI_Allegiance.Allegiance_Player bForceAllOtherOpinions True
+
+        set GD_AI_Allegiance.Allegiance_Player_NoLevel ForcedOtherOpinion OPINION_Enemy
+
+        set GD_AI_Allegiance.Allegiance_Player_NoLevel bForceAllOtherOpinions True
+
+    #</Make Everything Hostile (Magic_Gonads' SuperAggressive.txt)>
+
+    #<Hide Unwanted Props>
+
+        #<hotfix><key>"SparkLevelPatchEntry-HideProps1"</key><value>"Ash_P,VehicleSpawnStationTerminal,bCollideActors,,false"</value><on>
+
+        #<hotfix><key>"SparkLevelPatchEntry-HideProps2"</key><value>"Ash_P,VehicleSpawnStationTerminal,bHidden,,true"</value><on>
+
+        #<hotfix><key>"SparkLevelPatchEntry-HideProps3"</key><value>"Ash_P,VehicleSpawnStationPlatform,bCollideActors,,false"</value><on>
+
+        #<hotfix><key>"SparkLevelPatchEntry-HideProps4"</key><value>"Ash_P,VehicleSpawnStationPlatform,bHidden,,true"</value><on>
+
+        #<hotfix><key>"SparkLevelPatchEntry-HideProps5"</key><value>"Ash_P,LevelTravelStation,bCollideActors,,false"</value><on>
+
+        #<hotfix><key>"SparkLevelPatchEntry-HideProps6"</key><value>"Ash_P,LevelTravelStation,bHidden,,true"</value><on>
+
+        #<hotfix><key>"SparkLevelPatchEntry-HideProps7"</key><value>"Ash_P,WillowMissionPickupSpawner,bCollideActors,,false"</value><on>
+
+        #<hotfix><key>"SparkLevelPatchEntry-HideProps8"</key><value>"Ash_P,WillowMissionPickupSpawner,bHidden,,true"</value><on>
+
+    #</Hide Unwanted Props>
+
+    #<Set Respawn Points>
+
+        #<hotfix><key>"SparkLevelPatchEntry-RespawnPoint1"</key><value>"Ash_P,WillowCoopPlayerStart,Location,,(x=4360,y=-3865,z=-184000)"</value><on>
+
+        #<hotfix><key>"SparkLevelPatchEntry-RespawnPoint2"</key><value>"Ash_P,StationTeleporterExitPoint,Location,,(x=4360,y=-3865,z=-184000)"</value><on>
+
+        #<hotfix><key>"SparkLevelPatchEntry-RespawnPoint3"</key><value>"Ash_P,TargetPoint,Location,,(x=4360,y=-3865,z=-184000)"</value><on>
+
+    #</Set Respawn Points>
+
+    #<Reset Drops>
+
+        #<Delete Drops>
+
+        #</Delete Drops>
+
+        #<Restore Drop Settings>
+
+        #</Restore Drop Settings>
+
+    #</Reset Drops>
+
+    #<Teleport Players>
+
+        set WillowPlayerPawn Location (x=5000, y=-50000, z=30000)
+
+        set WillowPlayerPawn Velocity (x=10000, y=10000, z=10000)
+
+        set WillowPlayerPawn AirControl 1
+
+    #</Teleport Players>
+
+#</Robeth's Battle Royale v2>
+
+set Transient.SparkServiceConfiguration_6 Keys ("SparkLevelPatchEntry-HideProps1","SparkLevelPatchEntry-HideProps2","SparkLevelPatchEntry-HideProps3","SparkLevelPatchEntry-HideProps4","SparkLevelPatchEntry-HideProps5","SparkLevelPatchEntry-HideProps6","SparkLevelPatchEntry-HideProps7","SparkLevelPatchEntry-HideProps8","SparkLevelPatchEntry-RespawnPoint1","SparkLevelPatchEntry-RespawnPoint2","SparkLevelPatchEntry-RespawnPoint3")
+
+set Transient.SparkServiceConfiguration_6 Values ("Ash_P,VehicleSpawnStationTerminal,bCollideActors,,false","Ash_P,VehicleSpawnStationTerminal,bHidden,,true","Ash_P,VehicleSpawnStationPlatform,bCollideActors,,false","Ash_P,VehicleSpawnStationPlatform,bHidden,,true","Ash_P,LevelTravelStation,bCollideActors,,false","Ash_P,LevelTravelStation,bHidden,,true","Ash_P,WillowMissionPickupSpawner,bCollideActors,,false","Ash_P,WillowMissionPickupSpawner,bHidden,,true","Ash_P,WillowCoopPlayerStart,Location,,(x=4360,y=-3865,z=-184000)","Ash_P,StationTeleporterExitPoint,Location,,(x=4360,y=-3865,z=-184000)","Ash_P,TargetPoint,Location,,(x=4360,y=-3865,z=-184000)")
+
