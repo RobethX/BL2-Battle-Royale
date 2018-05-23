@@ -58,13 +58,23 @@
 
         set HealthResourcePool CurrentValue 100000
 
+        set WillowPlayerController bDisableEchoVideos True
+
+        set WillowPlayerController bShowUndiscoveredMissions False
+
     #</Player>
 
     #<Balance Tweaks>
 
-        set WillowGameInfo bBossesRegenHealthOnReset false
+        #<Disable Badass Rank>
 
-        set GD_Playthrough3Tuning.Balance.BalanceMod_PT3 BalanceModifiers ((MinEffectiveLevel=1,EnemyHealthMultiplier=1.000000,BadassEnemyHealthMultiplier=1.000000,EnemyShieldStrengthMultiplier=1.000000,BadassEnemyShieldStrengthMultiplier=1.000000,EnemyDamageMultiplier=1.000000,BadassEnemyDamageMultiplier=1.100000,XPGainedFromCombatMultiplier=1.000000,XPGainedFromQuestsMultiplier=1.000000,BadassRankGainMultiplier=0.000000,AmplifiedDamageMultiplier=1.000000,PlayerVehicleWeaponDamageMultiplier=3.000000,AttributeEffectsForSpawnedEnemies=((AttributeToModify=ResourcePoolAttributeDefinition'D_Attributes.AccuracyResourcePool.AccuracyMaxValue',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=-1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000)),(AttributeToModify=ResourcePoolAttributeDefinition'D_Attributes.AccuracyResourcePool.AccuracyMinValue',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=-1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.ShieldResourcePool.ShieldOnIdleRegenerationRate',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=-1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.DamageSourceModifiers.InstigatedStatusEffectDamageModifier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=-0.050000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.Weapon.WeaponDamage',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000)),(AttributeToModify=ResourcePoolAttributeDefinition'D_Attributes.HealthResourcePool.HealthPassiveRegenerationRate',ModifierType=MT_PostAdd,BaseModifierValue=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=AttributeInitializationDefinition'GD_Playthrough3Tuning.Formulas.Init_EnemyHealthRegenFormula',BaseValueScaleConstant=1.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.StatusEffectModifiers.AmpDurationResistanceModifier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000))),AttributeEffectsForPlayers=((AttributeToModify=AttributeDefinition'D_Attributes.Weapon.WeaponSwapTimeMultiplier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=0.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.DamageTypeModifers.InstigatedIncendiaryStatusDamageModifier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=0.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.DamageTypeModifers.InstigatedCorrosiveStatusDamageModifier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=0.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.DamageTypeModifers.InstigatedShockStatusDamageModifier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=0.000000))),AmmoDropsPerPlayerMultiplier=(BaseValueConstant=3.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000),GearDrops_CommonWeightModifier_PT3_BaseValueOverride=(BaseValueConstant=0.075000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000),ChestItemPool_Weight_2_Uncommon_PT3_Multiplier=(BaseValueConstant=0.075000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000),StatusEffectChanceScales=,AIDamageScaleByLevelDifference=))
+            set GD_Challenges.BadassSkill.BadassSkill SkillEffectDefinitions ()
+
+        #</Disable Badass Rank>
+
+        set WillowGameInfo bBossesRegenHealthOnReset false
+		
+		set WillowGame.WillowAIPawn SightRadius 1000
 
     #</Balance Tweaks>
 
@@ -124,11 +134,45 @@
 
     #<Teleport Players>
 
-        set WillowPlayerPawn Location (x=5000, y=-50000, z=30000)
+        set WillowPlayerPawn location (x=30000, y=-35000, z=30000)
 
-        set WillowPlayerPawn Velocity (x=10000, y=10000, z=10000)
+        set WillowPlayerPawn Velocity (x=0, y=0, z=0)
 
-        set WillowPlayerPawn AirControl 1
+        set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_0 location (x=22352, y=-28377, z=3339)
+
+        set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_1 location (x=-13831, y=5626, 	z=-7470)
+
+        set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_2 location (x=-34675, y=-21311, z=-1308)
+
+        set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_3 location (x=-13172, y=-25265, z=-3456)
+
+        set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_4 location (x=-20283, y=-52882, z=3591)
+
+        set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_5 location (x=-1932, y=-44876, z=965)
+
+        set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_6 location (x=18391, y=-44814, z=2292)
+
+        set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_7 location (x=30870, y=-36734, z=219)
+
+        set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_8 location (x=33906, y=-45844, z=2425)
+
+        set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_9 location (x=50759, y=-26697, z=-855)
+
+        set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_10 location (x=33916, y=-26625, z=-1946)
+
+        set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_11 location (x=25064, y=-1829, z=-4353)
+
+        set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_12 location (x=1345, y=10748, z=-7916)
+
+        set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_13 location (x=-29741, y=2108, z=-7633)
+		
+		set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_14 location (x=340156, y=-10849, z=-959)
+		
+		set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_15 location (x=24387, y=-9508, z=-2366)
+		
+		set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_16 location (x=3484, y=-25279, z=266)
+		
+		set Loader.TheWorld:PersistentLevel.WillowPlayerPawn_17 location (x=-10772, y=-34092, z=-627)
 
     #</Teleport Players>
 
