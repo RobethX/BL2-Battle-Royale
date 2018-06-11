@@ -1,1 +1,36 @@
+#<Hotline Miami by Robeth>
+
+    #<Player>
+
+    #</Player>
+
+    #<Balance>
+
+        set GD_Playthrough3Tuning.Balance.BalanceMod_PT3 BalanceModifiers ((MinEffectiveLevel=1,EnemyHealthMultiplier=0.100000,BadassEnemyHealthMultiplier=0.100000,EnemyShieldStrengthMultiplier=0.000000,BadassEnemyShieldStrengthMultiplier=0.000000,EnemyDamageMultiplier=10.000000,BadassEnemyDamageMultiplier=12.500000,BadassRankGainMultiplier=5.000000,AmplifiedDamageMultiplier=1.000000,PlayerVehicleWeaponDamageMultiplier=3.000000,AttributeEffectsForSpawnedEnemies=((AttributeToModify=ResourcePoolAttributeDefinition'D_Attributes.HealthResourcePool.HealthPassiveRegenerationRate',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.000000,BaseValueAttribute=None,InitializationDefinition=AttributeInitializationDefinition'GD_Playthrough3Tuning.Formulas.Init_EnemyHealthRegenFormula',BaseValueScaleConstant=0.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.StatusEffectModifiers.AmpDurationResistanceModifier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=1.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000))),AttributeEffectsForPlayers=((AttributeToModify=AttributeDefinition'D_Attributes.Weapon.WeaponSwapTimeMultiplier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.DamageTypeModifers.InstigatedIncendiaryStatusDamageModifier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.DamageTypeModifers.InstigatedCorrosiveStatusDamageModifier',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.DamageTypeModifers.InstigatedShockStatusDamageModifier',ModifierType=MT_PostAdd,BaseModifierValue=(BaseValueConstant=-2147483648.000000,BaseValueAttribute=None,InitializationDefinition=AttributeInitializationDefinition'GD_Balance_HealthAndDamage.Shields.Init_ShieldItem_CapacityMaxValue',BaseValueScaleConstant=1.000000)),(AttributeToModify=ResourcePoolAttributeDefinition'D_Attributes.HealthResourcePool.HealthOnIdleRegenerationRate',ModifierType=MT_PostAdd,BaseModifierValue=(BaseValueConstant=-2147483648.000000,BaseValueAttribute=None,InitializationDefinition=AttributeInitializationDefinition'GD_Balance_HealthAndDamage.Shields.Init_ShieldItem_CapacityMaxValue',BaseValueScaleConstant=1.000000)),(AttributeToModify=AttributeDefinition'D_Attributes.injured.TimeToBeRevivedMultiplier',ModifierType=MT_PostAdd,BaseModifierValue=(BaseValueConstant=-2147483648.000000,BaseValueAttribute=None,InitializationDefinition=AttributeInitializationDefinition'GD_Balance_HealthAndDamage.Shields.Init_ShieldItem_CapacityMaxValue',BaseValueScaleConstant=1.000000)),(AttributeToModify=ResourcePoolAttributeDefinition'D_Attributes.ShieldResourcePool.ShieldMaxValue',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.000000,BaseValueAttribute=None,InitializationDefinition=AttributeInitializationDefinition'GD_Balance_HealthAndDamage.Shields.Init_ShieldItem_CapacityMaxValue',BaseValueScaleConstant=0.000000)),(AttributeToModify=ResourcePoolAttributeDefinition'D_Attributes.ShieldResourcePool.ShieldOnIdleRegenerationDelay',ModifierType=MT_Scale,BaseModifierValue=(BaseValueConstant=0.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=0.000000))),AmmoDropsPerPlayerMultiplier=(BaseValueConstant=3.000000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000),GearDrops_CommonWeightModifier_PT3_BaseValueOverride=(BaseValueConstant=0.010000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000),ChestItemPool_Weight_2_Uncommon_PT3_Multiplier=(BaseValueConstant=0.010000,BaseValueAttribute=None,InitializationDefinition=None,BaseValueScaleConstant=1.000000),StatusEffectChanceScales=,AIDamageScaleByLevelDifference=))
+		
+		#<Disable Badass Rank>
+
+            set GD_Challenges.BadassSkill.BadassSkill SkillEffectDefinitions ()
+
+        #</Disable Badass Rank>
+		
+		#<Disable Moxxi Weapon Healing>
+
+        #</Disable Moxxi Weapon Healing>
+	
+    #</Balance>
+
+    #<Enemy Swaps>
+
+    #</Enemy Swaps>
+
+    #<Enemy Tweaks>
+
+    #</Enemy Tweaks>
+
+    #<Drop Tweaks>
+
+    #</Drop Tweaks>
+
+#</Hotline Miami by Robeth>
 
